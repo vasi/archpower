@@ -6,7 +6,7 @@ pkgdesc="PowerBook buttons, power and brightness daemon"
 arch=(powerpc)
 license=('GPL-2.0-or-later')
 url="https://sourceforge.net/projects/pbbuttons/"
-depends=('gettext' 'alsa-lib' 'glib2' 'doxygen' 'graphviz')
+depends=('gettext' 'alsa-lib' 'glib2')
 backup=('etc/pbbuttonsd.cnf' 'etc/power/pmcs-config')
 source=(
   "https://sourceforge.net/projects/pbbuttons/files/${pkgname}/${pkgver}/${pkgname}-${pkgver}.tar.gz"
@@ -48,7 +48,7 @@ prepare() {
 
 build() {
   cd ${pkgname}-${pkgver}
-  ./configure --prefix=/usr --sysconfdir=/etc --with-doxygen-docs
+  ./configure --prefix=/usr --sysconfdir=/etc
   make -j1
 }
 
