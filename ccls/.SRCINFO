@@ -1,0 +1,19 @@
+pkgbase = ccls
+	pkgdesc = C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting
+	pkgver = 0.20250815
+	pkgrel = 2
+	url = https://github.com/MaskRay/ccls
+	arch = x86_64
+	license = Apache-2.0
+	makedepends = cmake
+	makedepends = llvm
+	makedepends = ninja
+	makedepends = rapidjson
+	depends = clang
+	depends = gcc-libs
+	depends = glibc
+	depends = llvm-libs
+	source = https://github.com/MaskRay/ccls/archive/0.20250815/ccls-0.20250815.tar.gz
+	sha512sums = 89ebf24eb4f06d02f09f49e0ef5677008f11b944e27fd9c4169ebba1665dc32488b010a81b930978bcc001454b85617501f87993d59307e159587572bb5c2c19
+
+pkgname = ccls
